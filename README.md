@@ -1,3 +1,3 @@
 # it_pro
 
-http://togo.com/
+https://sshahdashraff.github.io/it_pro/
