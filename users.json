@@ -1,0 +1,27 @@
+[
+    {
+        "username": "amr elattar",
+        "email": "amrelattar420@gmail.com",
+        "id": "20225192",
+        "phonenumber": "01064819789",
+        "password": "Mo123456@",
+        "encrypted_password": "$2y$10$94xZlskgep.OOoOEXZ7qT.fheuJt63xRdPGMGVwrST6AJfJ8FPhha"
+    },
+    {
+        "username": "essam",
+        "email": "harvy.gamer33@gmail.com",
+        "id": "2244553",
+        "phonenumber": "01271489445",
+        "password": "Amr123456#",
+        "encrypted_password": "$2y$10$MLiYriOypDA.MXMwJosu8O6DTAKNdEBvbeNK2EPEzVWDGZO.3eIpq"
+    },
+    {
+        "username": "ahmed samy",
+        "email": "ahmedmohamedsamy813@gmail.com",
+        "id": "123456",
+        "phonenumber": "01016334658",
+        "password": "Mo123456#",
+        "encrypted_password": "$2y$10$GSMlGLNOuPXMDLud2I\/lFOJmd1VAAH3kuWNXI\/XvMTud\/v3Z9.o16",
+        "role":"admin"
+    }
+]

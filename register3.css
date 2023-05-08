@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.amr {
+  box-shadow: 0px 0px 13px 0px #3e3e3e;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: #ccc;
+  color: #3e3e3e;
+  font-size: larger;
+  font-weight: 500;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(imagess/WhatsApp\ Image\ 2023-04-20\ at\ 12.35.45.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: linear-gradient(to top, rgba(253, 253, 253, 0.8), rgba(255, 255, 255, 0.8) 100%);
+  padding: 25px 30px;
+  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid #eee;
+  box-shadow: 0px 0px 13px 0px #3e3e3e;
+  border-radius: 10px;
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container form .User-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0px 12px;
+}
+
+form .User-details .input-box {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 17px;
+}
+
+.User-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.User-details .input-box input {
+  height: 38px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.User-details .input-box input:focus,
+.User-details .input-box input:valid {
+  border-color: #0d6966;
+}
+
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .gender-details .category {
+  display: flex;
+  width: 80%;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+
+.gender-details .category label {
+  display: flex;
+  align-items: center;
+}
+
+.gender-details .category .dot {
+  background-color: #d9d9d9;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border-width: 100px;
+  margin-right: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two {
+  border-color: #d9d9d9;
+  background-color: #414982;
+}
+
+form input[type='radio'] {
+  display: none;
+}
+
+.check {
+  font-weight: inherit;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: white;
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #414982, #eeeff4);
+}
+
+.acc {
+  font-size: large;
+  font-weight: 400;
+}
+
+p .log_btn {
+  text-decoration: none;
+  color: blue;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .container form .User-details {
+    flex-direction: row;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  form .User-details .input-box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  form .gender-details .category {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .container form .User-details {
+    max-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .container form .User-details {
+    max-height: 150px;
+  }
+}

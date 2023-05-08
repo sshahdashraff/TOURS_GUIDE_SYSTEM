@@ -1,0 +1,181 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.log{
+    color: black;
+    background-color: rgb(54, 139, 214);
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 400;
+    display: inline-block;
+    padding: 0.6em;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    transition: 0.5s ease;
+}
+
+body h1{
+  font-size: 2em;
+  font-weight: 800;
+  padding: 2px 0px 10px 0px;
+  font-style: italic;
+  color: rgb(11, 11, 80);
+}
+
+body h2{
+  font-size: 1.8em;
+  font-weight: 800;
+  padding: 2px 0px 10px 0px;
+  font-style: italic;
+  color: rgb(108, 108, 108);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+
+input[type="text"],
+input[type="number"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #333;
+}
+
+input[type="file"] {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #1da445;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #188121;
+}
+
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #1da445;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #188121;
+}
+
+input:invalid,
+textarea:invalid {
+  border-bottom-color: rgb(54, 139, 214);
+}
+
+input:invalid + span,
+textarea:invalid + span {
+  display: block;
+  color: rgb(54, 139, 214);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+
+  table,
+  form {
+    margin: 0 auto;
+  }
+
+  
+  label {
+    grid-column: 1 / -1;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  input[type="file"] {
+    grid-column: 1 / -1;
+  }
+
+  input[type="submit"] {
+    justify-self: center;
+  }
+}
